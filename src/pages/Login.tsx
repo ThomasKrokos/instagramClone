@@ -1,16 +1,23 @@
-import { Box, Container, Stack, Typography } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
+import { Image } from "mui-image";
 import React from "react";
 
 const Login = () => {
   return (
     <>
-      <Container maxWidth="sm">
-        <Stack spacing={2} direction={"row"} alignItems={'center'} justifyContent={'center'}>
-          <Box
-            component="img"
-            alt="Phone"
-            src="../assets/loginpagephone.png"
-            />
+      <Box
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
+        minHeight="100vh"
+      >
+        <Stack
+          spacing={6}
+          direction={"row"}
+          alignItems={"center"}
+          justifyContent={"center"}
+        >
+          <Image alt="Phone" src="../assets/phone.png"/>
 
           <Stack direction={"column"}>
             <Typography>Login</Typography>
@@ -19,9 +26,13 @@ const Login = () => {
             <Typography>Login</Typography>
           </Stack>
         </Stack>
-      </Container>
+      </Box>
     </>
   );
 };
 
 export default Login;
+
+// <Container maxWidth="sm">
+
+// </Container>
