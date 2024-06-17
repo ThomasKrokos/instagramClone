@@ -17,7 +17,7 @@ const Login = () => {
           alignItems={"center"}
           justifyContent={"center"}
         >
-          <Image alt="Phone" src="../assets/phone.png"/>
+          <Image alt="Phone" src="https://static.cdninstagram.com/images/instagram/xig/homepage/phones/home-phones.png?__makehaste_cache_breaker=HOgRclNOosk"/>
 
           <Stack direction={"column"}>
             <Typography>Login</Typography>
@@ -33,6 +33,3 @@ const Login = () => {
 
 export default Login;
 
-// <Container maxWidth="sm">
-
-// </Container>
