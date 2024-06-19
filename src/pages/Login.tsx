@@ -1,6 +1,6 @@
 import { Box, Button, Divider, Stack, TextField, Typography } from "@mui/material";
 import { Image } from "mui-image";
-import React from "react";
+
 
 const Login = () => {
   return (
@@ -10,9 +10,10 @@ const Login = () => {
         justifyContent="center"
         alignItems="center"
         minHeight="100vh"
+        sx={{ width: '40%', margin: 'auto'}}
       >
         <Stack
-          spacing={6}
+          spacing={1}
           direction={"row"}
           alignItems={"center"}
           justifyContent={"center"}
@@ -28,9 +29,9 @@ const Login = () => {
             alt="Phone"
             src="https://tse2.mm.bing.net/th?id=OIP.DexBeSiGPUP4igHscKierwHaCi&pid=Api"
           />
-              <TextField label="Login" variant="outlined" />
+              <TextField label="Phone number, username, or email" variant="outlined" />
               <TextField label="Password" variant="outlined" />
-              <Button variant="contained">Login</Button>
+              <Button variant="contained" sx={{borderRadius: 3}}>Login</Button>
               <Divider>OR</Divider>
               <Typography>Log in with Facebook</Typography>
               <Typography>Forgot Password?</Typography>
